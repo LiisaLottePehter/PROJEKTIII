@@ -4,6 +4,8 @@ public class Matemaatika extends Küsimused2{
     public Matemaatika(ArrayList<String> küsimused) {
         super(küsimused);
     }
+
+    //vaatab kas vastus sobib vastavalt erialale
     @Override
     public ArrayList<String> listid(ArrayList<Integer> vastused) {
         ArrayList<String> matemaatika = new ArrayList<>();

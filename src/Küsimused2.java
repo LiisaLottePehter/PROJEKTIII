@@ -8,10 +8,12 @@ public class Küsimused2 {
         this.küsimused = küsimused;
     }
 
+    //meetod, mis igal eriala klassil loeb punkte erinevalt
     public  ArrayList<String> listid(ArrayList<Integer> vastused){
         return null;
     }
 
+    //küsimuste printimine ja lisab vastuste listi, mida kasutame eriala klassides
     public ArrayList<Integer> teeTest(ArrayList<String> küsimused) {
         ArrayList<Integer> vastused= new ArrayList<>();
         int tulemus = 0;

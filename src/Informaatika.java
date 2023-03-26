@@ -5,6 +5,7 @@ public class Informaatika extends Küsimused2{
         super(küsimused);
     }
 
+    //vaatab kas vastus sobib vastavalt erialale
     @Override
     public ArrayList<String> listid(ArrayList<Integer> vastused) {
         ArrayList<String> informaatika = new ArrayList<>();
