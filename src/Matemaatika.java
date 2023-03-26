@@ -19,6 +19,18 @@ public class Matemaatika extends Küsimused2{
         vastuseidkokku++;
         if(vastused.get(vastuseidkokku) == 1)
             matemaatika.add("1");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 3)
+            matemaatika.add("3");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 2)
+            matemaatika.add("2");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 1)
+            matemaatika.add("1");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 1)
+            matemaatika.add("1");
         return matemaatika;
     }
 }

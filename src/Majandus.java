@@ -20,6 +20,18 @@ public class Majandus extends Küsimused2{
         vastuseidkokku++;
         if(vastused.get(vastuseidkokku) == 3)
             majandus.add("3");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 1)
+            majandus.add("1");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 1)
+            majandus.add("1");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 3)
+            majandus.add("3");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 3)
+            majandus.add("3");
         return majandus;
     }
 }

@@ -25,6 +25,7 @@ public class App {
         Majandus majandus = new Majandus(loetud);
         Informaatika informaatika = new Informaatika(loetud);
         Küsimused2 küsimused = new Küsimused2(loetud);
+        System.out.println("Igale küsimusele vastata numbritega vahemikus 1-3, vastavalt sellele, mis tundub kõige sobilikum");
         ArrayList<Integer> vastused = küsimused.teeTest(loetud);
 
         ArrayList<String> matemaatikavastused = matemaatika.listid(vastused);
@@ -32,7 +33,7 @@ public class App {
         ArrayList<String> majandusevastused = majandus.listid(vastused);
 
         if(matemaatikavastused.size() > majandusevastused.size() && matemaatikavastused.size()>informaatikavastused.size())
-            System.out.println("Sobid matasse");
+            System.out.println("Sobid matemaatikasse");
         else if(majandusevastused.size() > matemaatikavastused.size() && majandusevastused.size() > informaatikavastused.size())
             System.out.println("Sobid majandusse");
         else if(informaatikavastused.size() > majandusevastused.size() && informaatikavastused.size() >matemaatikavastused.size())

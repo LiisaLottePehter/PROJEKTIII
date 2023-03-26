@@ -20,6 +20,18 @@ public class Informaatika extends Küsimused2{
         vastuseidkokku++;
         if(vastused.get(vastuseidkokku) == 2)
             informaatika.add("2");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 1)
+            informaatika.add("1");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 3)
+            informaatika.add("3");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 2)
+            informaatika.add("2");
+        vastuseidkokku++;
+        if(vastused.get(vastuseidkokku) == 2)
+            informaatika.add("2");
         return informaatika;
     }
 

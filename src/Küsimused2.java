@@ -7,9 +7,11 @@ public class Küsimused2 {
     public Küsimused2(ArrayList<String> küsimused) {
         this.küsimused = küsimused;
     }
-    public  ArrayList<String> listid(ArrayList<Integer> küsimused){
+
+    public  ArrayList<String> listid(ArrayList<Integer> vastused){
         return null;
     }
+
     public ArrayList<Integer> teeTest(ArrayList<String> küsimused) {
         ArrayList<Integer> vastused= new ArrayList<>();
         int tulemus = 0;
