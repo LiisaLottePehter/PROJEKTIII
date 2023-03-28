@@ -35,4 +35,9 @@ public class Majandus extends Küsimused2{
             majandus.add("3");
         return majandus;
     }
+
+    @Override
+    public String protsendid(ArrayList<String> üksList, ArrayList<String> teineList) {
+        return super.protsendid(üksList, teineList) + "% vastuseid sobitavad sind kõige paremini majandusse.";
+    }
 }

@@ -36,18 +36,19 @@ public class App {
 
         if(matemaatikavastused.size() > majandusevastused.size() && matemaatikavastused.size()>informaatikavastused.size()){
             System.out.println("Sobid matemaatikasse");
-            System.out.println(matemaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind kõige paremini matemaatikasse.");
+            //System.out.println(matemaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind kõige paremini matemaatikasse.");
+            System.out.println(matemaatika.protsendid(matemaatikavastused, loetud));
 
         }
         else if(majandusevastused.size() > matemaatikavastused.size() && majandusevastused.size() > informaatikavastused.size()){
             System.out.println("Sobid majandusse");
-            System.out.println(majandusevastused.size()*100/loetud.size() + "% vastuseid sobitavad sind kõige paremini majandusse.");
+            System.out.println(majandus.protsendid(majandusevastused, loetud));
 
         }
 
         else if(informaatikavastused.size() > majandusevastused.size() && informaatikavastused.size() >matemaatikavastused.size()){
             System.out.println("Sobid informaatikasse");
-            System.out.println(informaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind kõige paremini informaatikasse.");
+            System.out.println(informaatika.protsendid(informaatikavastused, loetud));
 
         }
 
@@ -55,19 +56,19 @@ public class App {
         //praegu nii aga võiks äkki lisaküsimuse küsida
         else if(matemaatikavastused.size() == majandusevastused.size()){
             System.out.println("Sobid nii majandusse kui matemaatikasse");
-            System.out.println(majandusevastused.size()*100/loetud.size() + "% vastuseid sobitavad sind majandusse.");
-            System.out.println(matemaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind matemaatikasse.");
+            System.out.println(majandus.protsendid(majandusevastused, loetud));
+            System.out.println(matemaatika.protsendid(matemaatikavastused, loetud));
         }
 
         else if(matemaatikavastused.size() == informaatikavastused.size()){
             System.out.println("Sobid nii informaatikasse kui matemaatikasse");
-            System.out.println(informaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind informaatikasse.");
-            System.out.println(matemaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind matemaatikasse.");
+            System.out.println(informaatika.protsendid(informaatikavastused, loetud));
+            System.out.println(matemaatika.protsendid(matemaatikavastused, loetud));
         }
         else if(informaatikavastused.size() == majandusevastused.size()){
             System.out.println("Sobid nii informaatikasse kui majandusse");
-            System.out.println(informaatikavastused.size()*100/loetud.size() + "% vastuseid sobitavad sind kõige paremini informaatikasse.");
-            System.out.println(majandusevastused.size()*100/loetud.size() + "% vastuseid sobitavad sind majandusse.");
+            System.out.println(informaatika.protsendid(informaatikavastused, loetud));
+            System.out.println(majandus.protsendid(majandusevastused, loetud));
 
 
         }

@@ -13,6 +13,12 @@ public class Küsimused2 {
         return null;
     }
 
+    public String protsendid(ArrayList<String> üksList, ArrayList<String> teineList){
+        int protsent = üksList.size() * 100/ teineList.size();
+        String protsentString = Integer.toString(protsent);
+        return protsentString;
+    }
+
     //küsimuste printimine ja lisab vastuste listi, mida kasutame eriala klassides
     public ArrayList<Integer> teeTest(ArrayList<String> küsimused) {
         ArrayList<Integer> vastused= new ArrayList<>();
@@ -34,7 +40,6 @@ public class Küsimused2 {
                 System.out.println("Sisesta õige number palun");
                 i--;
             }
-
         }
         return vastused;
     }

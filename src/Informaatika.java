@@ -36,5 +36,9 @@ public class Informaatika extends Küsimused2{
         return informaatika;
     }
 
+    @Override
+    public String protsendid(ArrayList<String> üksList, ArrayList<String> teineList) {
+        return super.protsendid(üksList, teineList) + "% vastuseid sobitavad sind kõige paremini informaatikasse.";
+    }
 }
 

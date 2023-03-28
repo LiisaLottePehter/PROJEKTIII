@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Matemaatika extends Küsimused2{
+
     public Matemaatika(ArrayList<String> küsimused) {
         super(küsimused);
     }
@@ -34,5 +35,10 @@ public class Matemaatika extends Küsimused2{
         if(vastused.get(vastuseidkokku) == 1)
             matemaatika.add("1");
         return matemaatika;
+    }
+
+    @Override
+    public String protsendid(ArrayList<String> üksList, ArrayList<String> teineList) {
+        return super.protsendid(üksList, teineList) + "% vastuseid sobitavad sind kõige paremini matemaatikasse.";
     }
 }
