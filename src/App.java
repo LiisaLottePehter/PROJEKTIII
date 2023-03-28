@@ -32,12 +32,26 @@ public class App {
         ArrayList<String> informaatikavastused = informaatika.listid(vastused);
         ArrayList<String> majandusevastused = majandus.listid(vastused);
 
-        if(matemaatikavastused.size() > majandusevastused.size() && matemaatikavastused.size()>informaatikavastused.size())
+        if(matemaatikavastused.size() > majandusevastused.size() && matemaatikavastused.size()>informaatikavastused.size()){
             System.out.println("Sobid matemaatikasse");
-        else if(majandusevastused.size() > matemaatikavastused.size() && majandusevastused.size() > informaatikavastused.size())
+            System.out.println(majandusevastused.size());
+            System.out.println(informaatikavastused.size());
+            System.out.println(matemaatikavastused.size());
+        }
+        else if(majandusevastused.size() > matemaatikavastused.size() && majandusevastused.size() > informaatikavastused.size()){
             System.out.println("Sobid majandusse");
-        else if(informaatikavastused.size() > majandusevastused.size() && informaatikavastused.size() >matemaatikavastused.size())
-            System.out.println("Sobid it-sse");
+            System.out.println(majandusevastused.size());
+            System.out.println(informaatikavastused.size());
+            System.out.println(matemaatikavastused.size());
+        }
+
+        else if(informaatikavastused.size() > majandusevastused.size() && informaatikavastused.size() >matemaatikavastused.size()){
+            System.out.println("Sobid informaatikasse");
+            System.out.println(majandusevastused.size());
+            System.out.println(informaatikavastused.size());
+            System.out.println(matemaatikavastused.size());
+        }
+
 
         //praegu nii aga võiks äkki lisaküsimuse küsida
         else if(matemaatikavastused.size() == majandusevastused.size())
