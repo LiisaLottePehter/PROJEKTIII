@@ -34,22 +34,19 @@ public class App {
 
         if(matemaatikavastused.size() > majandusevastused.size() && matemaatikavastused.size()>informaatikavastused.size()){
             System.out.println("Sobid matemaatikasse");
-            System.out.println(majandusevastused.size());
-            System.out.println(informaatikavastused.size());
-            System.out.println(matemaatikavastused.size());
+            System.out.println(matemaatikavastused.size() + " vastust " + loetud.size() + "-st sobitavad sind kõige paremini matemaatikasse.");
+
         }
         else if(majandusevastused.size() > matemaatikavastused.size() && majandusevastused.size() > informaatikavastused.size()){
             System.out.println("Sobid majandusse");
-            System.out.println(majandusevastused.size());
-            System.out.println(informaatikavastused.size());
-            System.out.println(matemaatikavastused.size());
+            System.out.println(majandusevastused.size() + " vastust " + loetud.size() + "-st sobitavad sind kõige paremini majandusse.");
+
         }
 
         else if(informaatikavastused.size() > majandusevastused.size() && informaatikavastused.size() >matemaatikavastused.size()){
             System.out.println("Sobid informaatikasse");
-            System.out.println(majandusevastused.size());
-            System.out.println(informaatikavastused.size());
-            System.out.println(matemaatikavastused.size());
+            System.out.println(informaatikavastused.size() + " vastust " + loetud.size() + "-st sobitavad sind kõige paremini informaatikasse.");
+
         }
 
 
